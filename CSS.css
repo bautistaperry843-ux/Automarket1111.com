@@ -1,0 +1,219 @@
+/* Importación de fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #1e3a8a; /* Azul oscuro elegante */
+    --secondary-color: #2563eb; /* Azul brillante */
+    --accent-color: #10b981; /* Verde para precios/éxito */
+    --bg-color: #f8fafc; /* Fondo gris muy claro */
+    --card-bg: #ffffff;
+    --text-color: #1e293b;
+    --border-color: #e2e8f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
+
+/* Encabezado Principal */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+header .btn-header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+header .btn-header:hover {
+    background-color: #1d4ed8;
+}
+
+/* Barra de Navegación */
+nav {
+    background-color: white;
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 10%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Contenedor Principal */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.hero-section {
+    text-align: center;
+    background: white;
+    padding: 40px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.hero-section img {
+    max-width: 280px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Tarjetas y Rejillas (Grids) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* Formularios Modernos */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+button, .btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+button:hover, .btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Acordeón (<details>) Estilizado */
+details {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 12px 16px;
+}
+
+summary {
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+details p {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    color: #64748b;
+    font-size: 0.9rem;
+}
